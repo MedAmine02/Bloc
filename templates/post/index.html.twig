@@ -1,0 +1,31 @@
+<!--
+
+<div class="example-wrapper">
+<h1>{{ article1.title }}</h1>
+<p>{{ article1.content }}</p>
+<p>Author: {{ article1.author }}</p>
+<p>Created at: {{ article1.created_at}}</p>
+<p>Updated at: {{ article1.updated_at }}</p>
+</div>
+
+
+<div class="example-wrapper">
+<h1>{{ article2.title }}</h1>
+<p>{{ article2.content }}</p>
+<p>Author: {{ article2.author }}</p>
+<p>Created at: {{ article2.created_at}}</p>
+<p>Updated at: {{ article2.updated_at }}</p>
+</div>
+-->
+
+
+<div class="example-wrapper">
+{% for post in posts %}
+    <h1>{{ article2.title }}</h1>
+    <p>{{ article2.content }}</p>
+    <p><em>Author: {{ article2.author }} -  {{ article2.created_at|date('d/m/Y')}}</em></p>
+    
+{% endfor %}
+</div>
+{% endblock %}
+
